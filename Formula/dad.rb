@@ -4,6 +4,8 @@ class Dad < Formula
   version "0.9.1"
   license "MIT"
 
+  deprecate! date: "2026-06-01", because: "moved to nicknisi/formulae: `brew install nicknisi/formulae/dad`"
+
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/nicknisi/diffdad/releases/download/v#{version}/dad-darwin-arm64.tar.gz"
